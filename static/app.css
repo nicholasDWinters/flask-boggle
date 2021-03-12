@@ -14,3 +14,7 @@ h1 {
 #guessForm {
     margin-top: 20px;
 }
+
+.phrase {
+    font-weight: bold;
+}
