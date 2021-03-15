@@ -12,6 +12,7 @@
 <body>
     <h1>Play Boggle!</h1>
     <h2 id="highScore">High Score: {{session['highscore']}}</h2>
+    <p id="timeCounter"></p>
     <table class="boardTable">
         <tbody>
             {%for row in board%}
