@@ -1,5 +1,6 @@
-h1 {
-    color: red;
+h1, #highScore {
+    color: darkblue;
+    
 }
 
 .tableLetter {
@@ -10,7 +11,9 @@ h1 {
     border: 1px solid grey;
     text-align: center;
 }
-
+#guessLabel {
+    font-size: 20px;
+}
 #guessForm {
     margin-top: 20px;
 }
@@ -22,4 +25,17 @@ h1 {
 a {
     text-decoration: none;
     color: black;
+}
+
+.container {
+    width: 1000px;
+}
+
+#timeCounter {
+    font-weight: bold;
+    color: orangered;
+}
+
+.hidden {
+    display: none;
 }

@@ -16,7 +16,7 @@ class FlaskTests(TestCase):
             resp = client.get('/')
             html = resp.get_data(as_text=True)
             self.assertEqual(resp.status_code, 200)
-            self.assertIn('<h1>Play Boggle!</h1>', html)
+            self.assertIn('<h1 class="display-3">Play Boggle!</h1>', html)
             self.assertIn('board', session)
 
     def test_guess_page(self):

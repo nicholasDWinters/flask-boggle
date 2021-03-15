@@ -6,10 +6,11 @@ class Game {
         this.score = $('#score');
         this.guessForm = $('#guessForm');
         this.highScore = $('#highScore');
+        this.playAgainBtn = $('#playAgainBtn');
         this.total = 0;
         this.numGuesses = 0;
         this.guesses = [];
-        this.secs = 10;
+        this.secs = 60;
         $('#submitBtn', this.board).on('click', this.submitGuess.bind(this));
     }
 
@@ -50,6 +51,7 @@ class Game {
         $('#guessForm').remove();
         this.messageList.remove();
         this.score.text(`Final score: ${this.total}`);
+        this.playAgainBtn.toggleClass('hidden');
     }
 
     async updateSession() {
